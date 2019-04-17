@@ -2,6 +2,8 @@ package com.main;
 import LintCode20190413.SingleNumber;
 import LintCode20190412.getNarcissusNumbers;
 import LintCode20190414.PalindromeNumber;
+import Written_examination_questions.IsCuboid;
+import Written_examination_questions.MinLoopPosition;
 import Written_examination_questions.TransAndMergElement;
 
 import java.util.List;
@@ -27,12 +29,24 @@ public class main {
          *         boolean bool = pn.isPalindrome(a);
          *         System.out.println(bool);
          */
-        TransAndMergElement transAndMergElement = new TransAndMergElement();
-        int[] ints = transAndMergElement.crossMerge(new int[]{1, 2, 3,8,9,10}, new int[]{4, 5, 6, 7});
-        for (int i:ints
-             ) {
-            System.out.println(i);
-        }
+        /**
+         * 交换合并数组
+         *   TransAndMergElement transAndMergElement = new TransAndMergElement();
+         *         int[] ints = transAndMergElement.crossMerge(new int[]{1, 2, 3,8,9,10}, new int[]{4, 5, 6, 7});
+         *         for (int i:ints
+         *              ) {
+         *             System.out.println(i);
+         *         }
+         */
+        /**
+         * 字符串循环排序
+         * MinLoopPosition minLoopPosition = new MinLoopPosition();
+         *         int i = minLoopPosition.caclMinLoopPosition("cba");
+         *         System.out.println(i);
+         */
+        IsCuboid isCuboid = new IsCuboid();
+        boolean cuboid = isCuboid.isCuboid(new int[][]{{1, 2}, {2, 3}, {1, 4}, {1, 3}, {2, 3}, {1, 2}});
+        System.out.println(cuboid);
 
     }
 }

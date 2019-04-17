@@ -8,12 +8,18 @@ package Written_examination_questions;
 public class MinLoopPosition {
     public int caclMinLoopPosition(String str){
         String[] strArr = new String[str.length()];
+        String s;
+        String minStr = str;
+        int min = 0;
         for(int i = 0; i < str.length();i++){
             String str1 = str.substring(0,i);
-            String str2 = str.substring(i,str.length() - 1);
-            strArr[i] = str2 + str1;
+            String str2 = str.substring(i,str.length());
+            s = str2 + str1;
+            if(s.compareTo(minStr) < 0) {
+                minStr = s;
+                min = i;
+            }
         }
-        
-        return -1;
+        return min;
     }
 }
