@@ -2,6 +2,7 @@ package com.main;
 import LintCode20190413.SingleNumber;
 import LintCode20190412.getNarcissusNumbers;
 import LintCode20190414.PalindromeNumber;
+import LintCode20190417.NumberOfOperations;
 import Written_examination_questions.IsCuboid;
 import Written_examination_questions.MinLoopPosition;
 import Written_examination_questions.TransAndMergElement;
@@ -43,10 +44,13 @@ public class main {
          * MinLoopPosition minLoopPosition = new MinLoopPosition();
          *         int i = minLoopPosition.caclMinLoopPosition("cba");
          *         System.out.println(i);
+         *          IsCuboid isCuboid = new IsCuboid();
+         *         boolean cuboid = isCuboid.isCuboid(new int[][]{{1, 2}, {2, 3}, {1, 4}, {1, 3}, {2, 3}, {1, 2}});
+         *         System.out.println(cuboid);
+         *
          */
-        IsCuboid isCuboid = new IsCuboid();
-        boolean cuboid = isCuboid.isCuboid(new int[][]{{1, 2}, {2, 3}, {1, 4}, {1, 3}, {2, 3}, {1, 2}});
-        System.out.println(cuboid);
-
+        NumberOfOperations numberOfOperations = new NumberOfOperations();
+        int i = numberOfOperations.numberOfOperations("qwertyuiop");
+        System.out.println(i);
     }
 }
