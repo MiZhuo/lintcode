@@ -30,21 +30,16 @@ public class NumberOfOperations {
         char[] arr = s.toCharArray();
         int i = 0,j = arr.length - 1,iLoop = 0;
         for (char c:arr) {
-            while(arr[i] != arr[j]){
+            while(i != j && (i - 1) != j){
                 if(arr[i] < arr[j] ) {
-                    arr[j] -= 1;
-                    iLoop++;
+                    iLoop+= (arr[j] - arr[i]);
                 }
                 if(arr[i] > arr[j]) {
-                    arr[j] += 1;
-                    iLoop++;
+                    iLoop+= (arr[i] - arr[j]);
                 }
-
+                i++;
+                j--;
             }
-            i++;
-            j--;
-            if(i == j || (i - 1) == j)
-                break;
         }
         return iLoop;
     }
