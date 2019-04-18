@@ -3,6 +3,7 @@ import LintCode20190413.SingleNumber;
 import LintCode20190412.getNarcissusNumbers;
 import LintCode20190414.PalindromeNumber;
 import LintCode20190417.NumberOfOperations;
+import LintCode20190418.MaximumSwap;
 import Written_examination_questions.IsCuboid;
 import Written_examination_questions.MinLoopPosition;
 import Written_examination_questions.TransAndMergElement;
@@ -48,9 +49,12 @@ public class main {
          *         boolean cuboid = isCuboid.isCuboid(new int[][]{{1, 2}, {2, 3}, {1, 4}, {1, 3}, {2, 3}, {1, 2}});
          *         System.out.println(cuboid);
          *
+         *     NumberOfOperations numberOfOperations = new NumberOfOperations();
+         *         int i = numberOfOperations.numberOfOperations("qwertyuiop");
+         *         System.out.println(i);
          */
-        NumberOfOperations numberOfOperations = new NumberOfOperations();
-        int i = numberOfOperations.numberOfOperations("qwertyuiop");
+        MaximumSwap maximumSwap = new MaximumSwap();
+        int i = maximumSwap.maximumSwap(9987);
         System.out.println(i);
     }
 }
