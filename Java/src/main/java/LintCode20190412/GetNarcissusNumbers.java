@@ -3,7 +3,7 @@ package LintCode20190412;
 import java.util.ArrayList;
 import java.util.List;
 
-public class getNarcissusNumbers {
+public class GetNarcissusNumbers {
     public List<Integer> getNarcissisticNumbers(int n) {
         // write your code here
         List<Integer> list = new ArrayList<>();
