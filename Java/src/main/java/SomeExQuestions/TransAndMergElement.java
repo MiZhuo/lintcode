@@ -1,4 +1,4 @@
-package Written_examination_questions;
+package SomeExQuestions;
 
 /**
  * 交换合并列表元素

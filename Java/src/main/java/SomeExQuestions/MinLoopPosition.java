@@ -1,4 +1,4 @@
-package Written_examination_questions;
+package SomeExQuestions;
 
 /**
  * 给定字符串，判断从哪个位置开始循环，得到的字符串在字典中排序最小(a<b<c,abc<abd<bbc)
