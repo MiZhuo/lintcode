@@ -1,0 +1,51 @@
+package LintCode20190423;
+
+/**
+ * Write an efficient algorithm that searches for a value in an m x n matrix.
+ *
+ * This matrix has the following properties:
+ *
+ * Integers in each row are sorted from left to right.
+ * The first integer of each row is greater than the last integer of the previous row.
+ * 样例
+ * Example 1:
+ * 	Input:  [[5]],2
+ * 	Output: false
+ *
+ * 	Explanation:
+ * 	false if not included.
+ *
+ * Example 2:
+ * 	Input:  [
+ *     [1, 3, 5, 7],
+ *     [10, 11, 16, 20],
+ *     [23, 30, 34, 50]
+ * ],3
+ * 	Output: true
+ *
+ * 	Explanation:
+ * 	return true if included.
+ */
+public class SearchMatrix {
+    public boolean searchMatrix(int[][] matrix, int target) {
+        // write your code here
+        boolean iflag = false;
+        if(matrix.length < 1){
+            return false;
+        }
+        int temp = matrix[0][0];
+        for (int[] a:matrix) {
+            for (int b:a) {
+                if(b == target){
+                    iflag = true;
+                }
+                if(b < temp){
+                    return false;
+                }else{
+                    temp = b;
+                }
+            }
+        }
+        return iflag;
+    }
+}
